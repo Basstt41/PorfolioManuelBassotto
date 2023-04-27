@@ -1,0 +1,162 @@
+
+/* Ilustracion hecha en css, construida aparte y separada por organizacion */
+
+.container-hero {
+    background-color: transparent;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    /* border: 1px solid black; */
+    position: relative;
+    /* top: 10px; */
+}
+
+.marco {
+    height: 150px;
+    width: 250px;
+    background-color: #171D1C;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.cuello {
+    width: 30px;
+    height: 30px;
+    background-color: #171D1C;
+}
+
+.base {
+    width: 75px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #171D1C;
+    position: relative;
+    bottom: 95%;
+}
+
+.on_off_btn {
+    height: 2%;
+    width: 2%;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 2%;
+}
+
+.pantalla {
+    width: 95%;
+    height: 88%;
+    background-color: rgba(1, 104, 172, 0.473);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.app {
+    height: 90%;
+    width: 35%;
+    background-color: #5FBFF9;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.app__proposal {
+    width: 60%;
+    height: 50px;
+    background-color: #6320EE;
+    border-radius: 5px 0 0 5px;
+    position: absolute;
+    top: 20%;
+    right: 0;
+}
+
+.app__footer {
+    width: 100%;
+    height: 30px;
+    background-color: #6320EE;
+    position: absolute;
+    bottom: 0;
+}
+
+.vs-code {
+    width: 60%;
+    height: 100%;
+    background-color: #1F2232;
+    position: relative;
+    right: -2.5%;   
+    font-family: monospace;
+    padding-top: 15px;
+}
+
+.vs-code__inner-list{
+    list-style: none;
+}
+
+/* REVISAR */
+
+.vs-code__inner-list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 10px;
+    margin: 5px -10px;
+    color: #397689;
+    margin: 0;
+    border: 1px solid blue;
+
+}
+
+.code {
+    height: 5px;
+    width: 70%;
+    background-color: #397689;
+    border-radius: 2px;
+    transition: all 1s;
+    animation: codeWriting 1s ease-in;
+}
+
+
+@keyframes codeWriting {
+    0% {
+        width: 0%;
+        background-color: red;
+    }
+
+}
+
+@media screen and (min-width: 920px) {
+
+    .container-hero {
+        height: 550px;
+        /* background-color: #5FBFF9; */
+    }
+
+    .marco {
+        height: 250px;
+        width: 450px;
+        top: 20%;
+    }
+
+    .cuello {
+        height: 60px;
+        width: 50px;
+    }
+
+    .base {
+        width: 150px;
+        height: 50px;
+    }
+
+    .on_off_btn {
+        height: 5px;
+        width: 5px;
+        bottom: 5px;
+    }
+}

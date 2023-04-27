@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../img/Group 9.png" type="image/x-icon">
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./proyectos.html">Projectos</a></li>
+            <li><a href="./about.html">Sobre mi</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main class="contac__main">
+        <!-- <h1>Creemos juntos</h1> -->
+        <form action="" method="post" enctype="text/plain">
+
+            <label for="name"><strong>Nombre</strong></label>
+            <input class="contact-field" type="text" placeholder="Ingrese su nombre" name="name" required>
+
+            <label for="mail"><strong>Email</strong></label>
+            <input class="contact-field" type="email" placeholder="Ingrese su Email" name="email" required>
+
+            <label for="asunto"><strong>Asunto</strong></label>
+            <input class="contact-field" type="text" name="asunto" placeholder="Asunto" required>
+
+            <label for="mensaje"><strong>Mensaje</strong></label>
+            <textarea class="contact-field text-field" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+            <input type="submit" value="enviar" class="submit-btn">
+        </form>
+
+        <div class="contac__img-container"> 
+            <img src="../img/sobre.svg" alt="" class="contac-img">
+        </div>
+    </main>
+    
+    <footer class="footer">
+
+        <ul>
+            <p>navegacion</p>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./proyectos.html">Projectos</a></li>
+            <li><a href="./about.html">Sobre mi</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+
+        <ul>
+            <p>redes</p>
+            <li><a href="https://www.linkedin.com/in/manuel-bassotto-8ba63a196/" target="_blank">linkedin</a></li>
+            <li><a href="https://github.com/Basstt41" target="_blank">Github</a></li>
+        </ul>
+
+    </footer>
+</body>
+</html>
