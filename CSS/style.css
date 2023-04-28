@@ -328,4 +328,41 @@ header {
     }
 }
 
+@media screen and (max-width: 650px) {
+    .container-hero {
+        padding: 2em;
+    }
+
+    /* about */
+
+    .about__main, .contac__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    .contac__main form {
+        margin-left: 0;
+        margin-bottom: 2em;
+    }
+
+    /* proyectos  */
+
+    .proyect__grid {
+        grid-template-columns: auto;
+        grid-gap: .5em;
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 960px) {
+    .container-hero {
+        height: 100%;
+    }
+
+    .proyect__grid {
+        grid-template-columns: repeat(2, auto);
+    }
+}
 
