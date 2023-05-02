@@ -152,6 +152,7 @@ body {
     grid-template-columns: repeat(2, 50%);
     place-content: center;
     height: 90vh;
+    background: var(--primary);
 }
 
 .about__text-container {
@@ -366,3 +367,35 @@ header {
     }
 }
 
+@media screen and (min-width: 921px) {
+    .nav-alter {
+        background: hsla(259, 94%, 7%, 1);
+        background: linear-gradient(45deg, hsla(259, 94%, 7%, 1) 74%, hsla(227, 48%, 19%, 1) 82%, hsla(213, 46%, 31%, 1) 91%, hsla(203, 69%, 60%, 1) 100%);
+        background: -moz-linear-gradient(45deg, hsla(259, 94%, 7%, 1) 74%, hsla(227, 48%, 19%, 1) 82%, hsla(213, 46%, 31%, 1) 91%, hsla(203, 69%, 60%, 1) 100%);
+        background: -webkit-linear-gradient(45deg, hsla(259, 94%, 7%, 1) 74%, hsla(227, 48%, 19%, 1) 82%, hsla(213, 46%, 31%, 1) 91%, hsla(203, 69%, 60%, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0B0121", endColorstr="#192347", GradientType=1 );
+    }
+    
+    .nav-style a {
+        color: var(--accent) !important;
+        margin: 0 2em;
+    }
+    
+    .about__main {
+    
+        background: linear-gradient(45deg, hsla(259, 94%, 7%, 1) 74%, hsla(227, 48%, 19%, 1) 82%, hsla(213, 46%, 31%, 1) 91%, hsla(203, 69%, 60%, 1) 100%);
+    
+        background: -moz-linear-gradient(45deg, hsla(259, 94%, 7%, 1) 74%, hsla(227, 48%, 19%, 1) 82%, hsla(213, 46%, 31%, 1) 91%, hsla(203, 69%, 60%, 1) 100%);
+    
+        background: -webkit-linear-gradient(45deg, hsla(259, 94%, 7%, 1) 74%, hsla(227, 48%, 19%, 1) 82%, hsla(213, 46%, 31%, 1) 91%, hsla(203, 69%, 60%, 1) 100%);
+    
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0B0121", endColorstr="#192347", GradientType=1 );
+    }
+
+    .about_img-detalle {
+        background-color: #53a5d8;
+        padding: 2em;
+        border-radius: 50%;
+        width: 120%;
+    }
+}
