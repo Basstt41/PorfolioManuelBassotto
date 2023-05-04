@@ -237,7 +237,7 @@ body {
 .submit-btn:hover {
     background-color: #4e17bb;
     color: var(--primary);
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
 }
 
 .contac__img-container {
@@ -397,5 +397,13 @@ header {
         padding: 2em;
         border-radius: 50%;
         width: 120%;
+    }
+
+    .about__text-container h1, .about__text-container p {
+        color: var(--accent);
+    }
+
+    .about__text-container h1::first-letter {
+        color: var(--primary);
     }
 }
