@@ -1,0 +1,85 @@
+$primary: #7EC7F2
+$secondaty: #0B0121
+$accent: #F8F0FB
+$accent2: #171D1C
+
+$padding: 2em
+
+
+
+// Los comentarios separan secciones. luego se convertiran en archivos individuales
+
+body
+    font-family: 'poppins', sans-serif
+    // nav-bar
+    nav
+        background-color: $secondaty !important
+        .nav-style  
+            display: flex
+            width: 100%
+            justify-content: center
+            gap: 0 3em
+    // HOME
+
+    .home-container 
+        display: flex
+        flex-direction: column-reverse
+        background-color: $secondaty
+        color: $accent
+        font-family: 'poppins'
+        .container-hero 
+            background-color: $primary
+            width: 100%
+            padding: $padding 
+        .proposal-card
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 5em 1em
+            .title-container
+                padding: 1em 0
+                .title-home 
+                    font-size: 4em
+                    margin-bottom: 1em
+                p
+                    text-align: center
+                    font-size: 1.2em
+                    font-weight: 300
+        .btn-container 
+            display: grid
+            width: 100%
+            grid-gap: .5em
+            .proposal-btn
+                padding: 1em
+                background-color: #39118B
+                border: none
+                border-radius: .3em
+                a
+                    text-decoration: none
+                    color: $accent
+                    font-size: 1.3em
+                    font-weight: 300
+            .btn-secondary
+                background-color: #002B44
+
+
+
+    // FOOTER
+
+    .footer
+        background-color: $secondaty
+        display: flex
+        flex-direction: column
+        padding: 1em
+
+        p
+            text-transform: uppercase
+            color: $primary
+        ul
+            list-style: none
+            width: 100%
+            text-align: center
+            li
+                a
+                    text-decoration: none
+                    color: $accent
