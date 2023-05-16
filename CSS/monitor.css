@@ -1,14 +1,17 @@
 
 /* Ilustracion hecha en css, construida aparte y separada por organizacion */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container-hero {
-    background-color: transparent;
+    background-color: blue;
     display: grid;
     place-items: center;
     width: 100%;
-    /* border: 1px solid black; */
-    position: relative;
-    /* top: 10px; */
 }
 
 .marco {

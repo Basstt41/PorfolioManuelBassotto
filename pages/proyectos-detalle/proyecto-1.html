@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nombre proyecto</title>
+    <title>Manuel Bassotto | Front-end challenge</title>
     <!-- css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../../CSS/style.css">
@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,53 +23,62 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav nav-style">
                 <a class="nav-link" href="../../index.html">Home</a>
-                <a class="nav-link" href="../about.html">About</a>
-                <a class="nav-link" href="../proyectos.html">Proyectos</a>
-                <a class="nav-link" href="../contacto.html">Contacto</a>
+                <a class="nav-link" href="../about.html">About Me</a>
+                <a class="nav-link" href="../proyectos.html">Work</a>
+                <a class="nav-link" href="../contacto.html">Contact</a>
             </div>
             </div>
         </div>
     </nav>
-    <main>
-        <h1>nombre del proyecto</h1>
-        <img src="" alt="captura del sitio">
-        <img src="" alt="captura del sitio">
-        <img src="" alt="captura del sitio">
-        <h2>tareas realizadas</h2>
-        <ul>
-            <li>tarea</li>
-            <li>tarea</li>
-            <li>tarea</li>
-        </ul>
+    <main class="detail__main">
+        <h1>Front-end mentor challenge</h1>
+        <div class="detail__img-container">
+            <img src="/img/p-1.png" alt="captura del sitio" width="100%">
+            <img src="/img/p-1-mobile.png" alt="captura del sitio" width="360px">
+        </div>
+        <div class="detail__wrapper">
+            <p>This is a <a href="https://www.frontendmentor.io/" target="_blank">Front-end Mentor <i class="fa fa-external-link"></i></a> challenge completed as a first interaction with HTML and CSS</p>
+            <hr>
+            <p>The purpose of this proyect wat to explore media querys, responsive desing, CSS variables, and more</p>
+            <div class="detail__tech">
+                <h2>Applied technologies</h2>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3"></i>
+                <br>
+                <button><a href="https://github.com/Basstt41" target="_blank">Github repository <br> <i class="fa-brands fa-github"></i></a></button>
+            </div>
 
-        <marquee behavior="" direction="" width="50%">
-            logos de las tecnologias utilizadas
-        </marquee>
+            <hr>
 
-        <a href="https://github.com/Basstt41" target="_blank">Github repository</a>
-
-        <hr>
-        <button><a href="../proyectos.html">atras</a></button>
-        <button><a href="../contacto.html">Contactame!</a></button>
+            <div class="detail__buttons">
+                <a href="../proyectos.html"><i class="fa fa-arrow-left"></i>   Back</a>
+                <a href="../contacto.html">Contact Me!</a>
+            </div>
+        </div>
+        
 
     </main>
 
     <footer class="footer">
-        <ul>
-            <p>navegacion</p>
-            <li><a href="../../index.html">Home</a></li>
-            <li><a href="../proyectos.html">Proyectos</a></li>
-            <li><a href="../about.html">Sobre mi</a></li>
-            <li><a href="../contacto.html">Contacto</a></li>
-        </ul>
+        <div class="footer__links-container">
+            <a href="../../index.html">Home</a>
+            <a href="../proyectos.html">Work</a>
+            <a href="../about.html">About Me</a>
+            <a href="../contacto.html">Contact</a> 
+        </div>
+        
+        
 
-        <ul>
-            <p>redes</p>
-            <li><a href="https://www.linkedin.com/in/manuel-bassotto-8ba63a196/" target="_blank">linkedin</a></li>
-            <li><a href="https://github.com/Basstt41" target="_blank">Github</a></li>
-        </ul>
 
+        <div class="footer__icons-container">
+            <a href="https://github.com/Basstt41" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/manuel-bassotto-8ba63a196/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <hr />
+        <p class="footer__copy">Copyright  ©2023 Todos los derechos reservados | Made by <a href="https://github.com/Basstt41" target="_blank">Basstt41</a></p>
     </footer>
+    <!-- Scrips -->
+    <script src="https://kit.fontawesome.com/9bcfd48eeb.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
