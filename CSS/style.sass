@@ -1,5 +1,4 @@
-@use 'sassFiles/__mediaQuery.sass'
-    
+
 $primary: #7EC7F2
 $secondaty: #0B0121
 $accent: #F8F0FB
@@ -8,6 +7,9 @@ $btn-color: #39118B
 
 $padding: 2em
 $padding-h: 2em 0
+
+@use 'sassFiles/__mediaQuery.sass'
+@use 'sassFiles/__animations.sass'
 
 @mixin button($padd, $radius, $bg-color, $color)
     padding: $padd
@@ -75,7 +77,6 @@ body
                 background-color: #002B44
 
 // About
-
 .about__main
     background: linear-gradient(51deg, rgba(11,1,33,1) 84%, rgba(95,191,249,1) 100%)
     color: $accent
@@ -93,12 +94,7 @@ body
     .about__text-container
         display: grid
         place-items: center
-    
-    .line
-        
-        height: 2px
-        color: $accent
-        width: 50%
+
 
     .stack
         display: grid

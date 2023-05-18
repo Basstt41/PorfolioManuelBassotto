@@ -1,0 +1,39 @@
+button
+    transition: all .2s ease-in
+    &:hover
+        scale: .98
+        background-color: transparent !important
+        border: 1px solid #39118B !important
+
+.about__img-container
+    img
+        animation: animation-const 2s alternate infinite
+    transition: all 1s ease-in
+    &:hover
+        transform: rotate(360deg)
+
+.contac__img-container
+    animation: animation-const 2s alternate infinite
+    img
+        &:hover
+            animation: contact-img-animation-hover 1s alternate
+
+
+.footer__links-container
+    a
+        transition: all .2s ease-in
+        &:hover
+            color: #7EC7F2 !important
+
+
+@keyframes contact-img-animation-hover
+    
+    100%
+        position: relative
+        scale: 0
+        transform: translate(100px)
+
+@keyframes animation-const 
+    100%
+        transform: translateY(10px)
+

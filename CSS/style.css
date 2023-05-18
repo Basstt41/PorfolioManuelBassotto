@@ -15,7 +15,6 @@
   .about__main {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, auto);
-    background-color: red;
   }
   .about__main .about__img-container {
     grid-row: 1/2;
@@ -61,6 +60,9 @@
     grid-row: 1/2;
     grid-column: 1/3;
   }
+  .contac__main img {
+    width: 450px !important;
+  }
   .contac__main form {
     grid-row: 2/3;
     grid-column: 1/2;
@@ -73,6 +75,55 @@
     grid-row: 3/4;
     grid-column: 1/3;
     margin: 2.5em 0;
+  }
+  .detail__main .detail__img-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+button {
+  transition: all 0.2s ease-in;
+}
+button:hover {
+  scale: 0.98;
+  background-color: transparent !important;
+  border: 1px solid #39118B !important;
+}
+
+.about__img-container {
+  transition: all 1s ease-in;
+}
+.about__img-container img {
+  animation: animation-const 2s alternate infinite;
+}
+.about__img-container:hover {
+  transform: rotate(360deg);
+}
+
+.contac__img-container {
+  animation: animation-const 2s alternate infinite;
+}
+.contac__img-container img:hover {
+  animation: contact-img-animation-hover 1s alternate;
+}
+
+.footer__links-container a {
+  transition: all 0.2s ease-in;
+}
+.footer__links-container a:hover {
+  color: #7EC7F2 !important;
+}
+
+@keyframes contact-img-animation-hover {
+  100% {
+    position: relative;
+    scale: 0;
+    transform: translate(100px);
+  }
+}
+@keyframes animation-const {
+  100% {
+    transform: translateY(10px);
   }
 }
 body {
@@ -164,11 +215,6 @@ body .home-container .btn-container .btn-secondary {
 .about__main .about__text-container {
   display: grid;
   place-items: center;
-}
-.about__main .line {
-  height: 2px;
-  color: #F8F0FB;
-  width: 50%;
 }
 .about__main .stack {
   display: grid;
