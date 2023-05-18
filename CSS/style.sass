@@ -1,3 +1,5 @@
+@use 'sassFiles/__mediaQuery'
+    
 $primary: #7EC7F2
 $secondaty: #0B0121
 $accent: #F8F0FB
@@ -15,6 +17,7 @@ $padding-h: 2em 0
     color: $color
     
 
+
 // Los comentarios separan secciones. luego se convertiran en archivos individuales
 
 body
@@ -28,10 +31,10 @@ body
             justify-content: center
             gap: 0 3em
     // HOME
-
+    
     .home-container 
-        display: flex
-        flex-direction: column-reverse
+        display: grid
+        place-items: center
         background-color: $secondaty
         color: $accent
         font-family: 'poppins'
@@ -39,6 +42,7 @@ body
             background-color: $primary
             width: 100%
             padding: $padding 
+            order: 2
         .proposal-card
             display: flex
             flex-direction: column
@@ -61,7 +65,7 @@ body
             width: 100%
             grid-gap: .5em
             .proposal-btn
-                @include button($padding / 2, .3em, $btn-color, $accent)
+                @include button(1em, .3em, $btn-color, $accent)
                 a
                     text-decoration: none
                     color: $accent
@@ -90,35 +94,38 @@ body
     .about__text-container
         display: grid
         place-items: center
-        hr
-            height: 2px
-            color: $accent
-            width: 50%
-        .stack
+    
+    .line
+        
+        height: 2px
+        color: $accent
+        width: 50%
+
+    .stack
+        display: grid
+        place-items: center
+        h2
+            font-size: 2em
+            text-align: center
+            margin-bottom: 1em
+        .stack-wrapper
             display: grid
+            grid-template-columns: repeat(2, auto)
             place-items: center
-            h2
-                font-size: 2em
-                text-align: center
-                margin-bottom: 1em
-            .stack-wrapper
+            grid-gap: 1em
+            list-style: none
+            .stack-item
+                // border: 1px solid white
                 display: grid
-                grid-template-columns: repeat(2, auto)
                 place-items: center
-                grid-gap: 1em
-                list-style: none
-                .stack-item
-                    // border: 1px solid white
-                    display: grid
-                    place-items: center
-                    width: 100px
-                    span
-                        font-size: 14px
-                        text-align: center
-                        text-transform: uppercase
-                        font-weight: 500
-                    i
-                        font-size: 50px
+                width: 100px
+                span
+                    font-size: 14px
+                    text-align: center
+                    text-transform: uppercase
+                    font-weight: 500
+                i
+                    font-size: 50px
 
 
 // Proyectos
@@ -127,7 +134,7 @@ body
     background-color: $primary
     h1
         text-align: center
-        padding: $padding / 4
+        padding: calc($padding / 4)
         font-weight: bold
         font-size: 2.5em
         color: $secondaty
@@ -172,7 +179,7 @@ body
     display: grid
     
     h1
-        padding: $padding / 2
+        padding: calc($padding / 2)
         font-weight: bold
         font-size: 2em
         color: $secondaty
@@ -181,7 +188,7 @@ body
         display: grid
         place-items: center
         grid-gap: 1em
-        padding: $padding / 4
+        padding: calc( $padding / 4)
         margin-bottom: 1em
         img
             border-radius: .25em
@@ -219,7 +226,7 @@ body
             a
                 @include button(.7em, .5em , $secondaty, $accent )
                 text-decoration: none
-            padding: $padding / 2
+            padding: calc($padding / 2)
             margin-bottom: 1em
             
         
@@ -249,16 +256,16 @@ body
             font-weight: 300
             margin: .75em 0
         input
-            padding: $padding / 4
+            padding: calc($padding / 4)
             border: none
             border-radius: .5em
         textarea
-            padding: $padding / 4
+            padding: calc($padding / 4)
             border: none
             border-radius: .250em
             margin-bottom: 1em
         .submit-btn
-            @include button($padding / 4, .25em, $btn-color, $accent) 
+            @include button(calc($padding / 4), .25em, $btn-color, $accent) 
             
     .contac__other-means
         // border: 1px solid black
@@ -285,7 +292,7 @@ body
 
 
     .footer__links-container
-        padding: $padding / 4
+        padding: calc($padding / 4)
         display: flex
         justify-content: center
         flex-wrap: wrap
@@ -294,7 +301,7 @@ body
             color: $accent
             text-align: center
             margin-right: 1em
-            padding: $padding / 2 0
+            padding: calc($padding / 2) 0
             font-weight: 600
     .footer__icons-container
         display: flex
@@ -315,3 +322,4 @@ body
             text-decoration: none
             font-weight: 600
             color: $accent
+

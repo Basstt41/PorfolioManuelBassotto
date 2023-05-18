@@ -11,8 +11,8 @@ body nav .nav-style {
   gap: 0 3em;
 }
 body .home-container {
-  display: flex;
-  flex-direction: column-reverse;
+  display: grid;
+  place-items: center;
   background-color: #0B0121;
   color: #F8F0FB;
   font-family: "poppins";
@@ -21,6 +21,7 @@ body .home-container .container-hero {
   background-color: #7EC7F2;
   width: 100%;
   padding: 2em;
+  order: 2;
 }
 body .home-container .proposal-card {
   display: flex;
@@ -87,39 +88,39 @@ body .home-container .btn-container .btn-secondary {
   display: grid;
   place-items: center;
 }
-.about__main .about__text-container hr {
+.about__main .line {
   height: 2px;
   color: #F8F0FB;
   width: 50%;
 }
-.about__main .about__text-container .stack {
+.about__main .stack {
   display: grid;
   place-items: center;
 }
-.about__main .about__text-container .stack h2 {
+.about__main .stack h2 {
   font-size: 2em;
   text-align: center;
   margin-bottom: 1em;
 }
-.about__main .about__text-container .stack .stack-wrapper {
+.about__main .stack .stack-wrapper {
   display: grid;
   grid-template-columns: repeat(2, auto);
   place-items: center;
   grid-gap: 1em;
   list-style: none;
 }
-.about__main .about__text-container .stack .stack-wrapper .stack-item {
+.about__main .stack .stack-wrapper .stack-item {
   display: grid;
   place-items: center;
   width: 100px;
 }
-.about__main .about__text-container .stack .stack-wrapper .stack-item span {
+.about__main .stack .stack-wrapper .stack-item span {
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
   font-weight: 500;
 }
-.about__main .about__text-container .stack .stack-wrapper .stack-item i {
+.about__main .stack .stack-wrapper .stack-item i {
   font-size: 50px;
 }
 
