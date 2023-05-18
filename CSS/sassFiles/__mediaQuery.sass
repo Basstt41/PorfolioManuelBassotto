@@ -2,9 +2,7 @@
     grid-template-columns: repeat($cols, $width)
 
 
-@media screen and (min-width: 900px) 
-
-// home    
+@media screen and (min-width: 900px)    
 
     .home-container 
         @include grid-two-cols(2, 50%)
@@ -19,7 +17,7 @@
 
 
 
-// About me
+    // About me
     .about__main
         grid-template-columns: repeat(2, 50%)
         grid-template-rows: repeat(2, auto)
@@ -47,7 +45,7 @@
                     grid-column: 2 / 3
 
 
-// Work
+    // Work
 
     .proyect__grid
         @include grid-two-cols(2, 400px)
@@ -60,7 +58,7 @@
                 place-items: center
                 max-height: 400px
     
-// contact
+    // contact
 
     .contac__main
         @include grid-two-cols(2, 50%)
