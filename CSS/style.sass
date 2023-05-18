@@ -13,7 +13,7 @@ $padding-h: 2em 0
 
 @mixin button($padd, $radius, $bg-color, $color)
     padding: $padd
-    border: none
+    border: 1px solid $bg-color
     border-radius: $radius
     background-color: $bg-color
     color: $color
@@ -54,7 +54,7 @@ body
                 padding: 1em 0
                 text-align: center
                 .title-home 
-                    font-size: 4em
+                    font-size: 3em
                     margin-bottom: 1em
                     span
                         border-bottom: solid 2px $primary
@@ -75,6 +75,7 @@ body
                     font-weight: 300
             .btn-secondary
                 background-color: #002B44
+                border: 1px solid #002B44
 
 // About
 .about__main
@@ -241,11 +242,12 @@ body
             font-size: 14px
             font-weight: 500
     img
-        width: 300px
+        width: 290px
         margin-bottom: 1em
     form
         display: flex
         flex-direction: column
+        
         label 
             font-weight: 300
             margin: .75em 0
@@ -260,19 +262,19 @@ body
             margin-bottom: 1em
         .submit-btn
             @include button(calc($padding / 4), .25em, $btn-color, $accent)
-            max-width: 300px
+
             
     .contac__other-means
         // border: 1px solid black
         text-align: center
-        .contact-ways-container
-            display: flex
-            justify-content: space-evenly
-            align-items: center
-            a
-                text-decoration: none
-                color: #39118B
-                font-size: 40px
+        a
+            text-decoration: none
+            color: #39118B
+            font-size: 40px
+            .contact-ways-container
+                display: flex
+                justify-content: space-evenly
+                align-items: center
 
 
     // FOOTER

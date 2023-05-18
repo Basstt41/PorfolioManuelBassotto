@@ -6,6 +6,9 @@
   .home-container .proposal-container {
     width: 100%;
   }
+  .home-container .proposal-container .title-container h1 {
+    font-size: 5em;
+  }
   .home-container .proposal-container .btn-container {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -162,7 +165,7 @@ body .home-container .proposal-card .title-container {
   text-align: center;
 }
 body .home-container .proposal-card .title-container .title-home {
-  font-size: 4em;
+  font-size: 3em;
   margin-bottom: 1em;
 }
 body .home-container .proposal-card .title-container .title-home span {
@@ -180,7 +183,7 @@ body .home-container .btn-container {
 }
 body .home-container .btn-container .proposal-btn {
   padding: 1em;
-  border: none;
+  border: 1px solid #39118B;
   border-radius: 0.3em;
   background-color: #39118B;
   color: #F8F0FB;
@@ -193,6 +196,7 @@ body .home-container .btn-container .proposal-btn a {
 }
 body .home-container .btn-container .btn-secondary {
   background-color: #002B44;
+  border: 1px solid #002B44;
 }
 
 .about__main {
@@ -290,7 +294,7 @@ body .home-container .btn-container .btn-secondary {
 }
 .proyect__main .proyect__grid .proyect__card .proyect__card-buttons button {
   padding: 1em;
-  border: none;
+  border: 1px solid #39118B;
   border-radius: 0.5em;
   background-color: #39118B;
   color: #F8F0FB;
@@ -346,7 +350,7 @@ body .home-container .btn-container .btn-secondary {
 }
 .detail__main .detail__wrapper .detail__tech button {
   padding: 0.5em;
-  border: none;
+  border: 1px solid #39118B;
   border-radius: 0.25em;
   background-color: #39118B;
   color: #F8F0FB;
@@ -365,7 +369,7 @@ body .home-container .btn-container .btn-secondary {
 }
 .detail__main .detail__wrapper .detail__buttons a {
   padding: 0.7em;
-  border: none;
+  border: 1px solid #0B0121;
   border-radius: 0.5em;
   background-color: #0B0121;
   color: #F8F0FB;
@@ -389,7 +393,7 @@ body .home-container .btn-container .btn-secondary {
   font-weight: 500;
 }
 .contac__main img {
-  width: 300px;
+  width: 290px;
   margin-bottom: 1em;
 }
 .contac__main form {
@@ -413,7 +417,7 @@ body .home-container .btn-container .btn-secondary {
 }
 .contac__main form .submit-btn {
   padding: 0.5em;
-  border: none;
+  border: 1px solid #39118B;
   border-radius: 0.25em;
   background-color: #39118B;
   color: #F8F0FB;
@@ -421,15 +425,15 @@ body .home-container .btn-container .btn-secondary {
 .contac__main .contac__other-means {
   text-align: center;
 }
-.contac__main .contac__other-means .contact-ways-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.contac__main .contac__other-means .contact-ways-container a {
+.contac__main .contac__other-means a {
   text-decoration: none;
   color: #39118B;
   font-size: 40px;
+}
+.contac__main .contac__other-means a .contact-ways-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .footer {
