@@ -129,6 +129,190 @@ button:hover {
     transform: translateY(10px);
   }
 }
+.container-hero {
+  display: grid;
+  place-items: center;
+}
+.container-hero .marco {
+  height: 150px;
+  width: 250px;
+  background-color: #171D1C;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.container-hero .marco .pantalla {
+  width: 95%;
+  height: 88%;
+  background-color: rgba(1, 104, 172, 0.473);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.container-hero .marco .pantalla .app {
+  height: 90%;
+  width: 35%;
+  background-color: #5FBFF9;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.container-hero .marco .pantalla .app .app__proposal {
+  width: 60%;
+  height: 50px;
+  background-color: #39118B;
+  border-radius: 5px 0 0 5px;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  transition: all 1s;
+  animation: app-code 1s ease-in;
+}
+.container-hero .marco .pantalla .app .app__footer {
+  width: 100%;
+  height: 30px;
+  background-color: #39118B;
+  position: absolute;
+  bottom: 0;
+  transition: all 2s;
+  animation: app-code 2s;
+}
+.container-hero .marco .pantalla .vs-code {
+  width: 60%;
+  height: 99%;
+  background-color: #1F2232;
+  border-radius: 5px;
+  position: relative;
+  right: -2%;
+  font-family: monospace;
+}
+.container-hero .marco .pantalla .vs-code .vs-code__inner-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+}
+.container-hero .marco .pantalla .vs-code .vs-code__inner-list li {
+  font-size: 0.5em;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.3em;
+  color: #397689;
+}
+.container-hero .marco .pantalla .vs-code .vs-code__inner-list li .code {
+  margin: 0.5em 0;
+  height: 5px;
+  width: 70%;
+  background-color: #397689;
+  border-radius: 2px;
+  animation: codeWriting 2s;
+}
+.container-hero .marco .pantalla .vs-code .vs-code__inner-list li:nth-child(2) {
+  width: 20%;
+}
+.container-hero .marco .pantalla .vs-code .vs-code__inner-list li:nth-child(3) {
+  width: 50%;
+}
+.container-hero .marco .pantalla .vs-code .vs-code__inner-list li:nth-child(4) {
+  width: 80%;
+}
+.container-hero .marco .pantalla .vs-code .vs-code__inner-list li:nth-child(5) {
+  width: 55%;
+}
+.container-hero .marco .pantalla .vs-code .vs-code__inner-list li:nth-child(6) {
+  width: 15%;
+}
+.container-hero .marco .pantalla .vs-code .vs-code__inner-list li:nth-child(7) {
+  width: 40%;
+}
+.container-hero .marco .pantalla .vs-code .vs-code__inner-list li:nth-child(8) {
+  width: 25%;
+}
+.container-hero .marco .on_off_btn {
+  height: 2%;
+  width: 2%;
+  background-color: #3591ad;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 2%;
+  right: 7%;
+}
+.container-hero .cuello {
+  width: 100%;
+  height: 30px;
+  display: grid;
+  place-items: center;
+}
+.container-hero .cuello .cuello-vis {
+  width: 30px;
+  height: 100%;
+  background-color: #171D1C;
+}
+.container-hero .base {
+  width: 100%;
+  height: 15px;
+  position: relative;
+  bottom: 95%;
+  display: grid;
+  place-items: center;
+}
+.container-hero .base .base-vis {
+  width: 75px;
+  height: 16px;
+  background-color: #171D1C;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 900px) {
+  .container-hero {
+    height: 550px;
+  }
+  .container-hero .marco {
+    height: 250px;
+    width: 450px;
+    top: 20%;
+  }
+  .container-hero .marco .vs-code__inner-list {
+    font-size: 1.3em;
+  }
+  .container-hero .marco .on_off_btn {
+    height: 5px;
+    width: 5px;
+    bottom: 5px;
+  }
+  .container-hero .cuello .cuello-vis {
+    height: 45px;
+    width: 50px;
+  }
+  .container-hero .base .base-vis {
+    width: 150px;
+    height: 20px;
+  }
+}
+@keyframes codeWriting {
+  0% {
+    width: 0;
+    background-color: transparent;
+  }
+  50% {
+    background-color: red;
+  }
+}
+@keyframes app-code {
+  0% {
+    display: none;
+  }
+  50% {
+    display: block;
+    border: 1px solid black;
+    background-color: transparent;
+  }
+}
 body {
   font-family: "poppins", sans-serif;
 }
