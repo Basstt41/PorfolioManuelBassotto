@@ -84,6 +84,11 @@
     grid-template-columns: repeat(2, auto);
   }
 }
+@media screen and (max-width: 300px) {
+  .contac__main .contac__img-container img {
+    width: 200px;
+  }
+}
 button {
   transition: all 0.2s ease-in;
 }
@@ -577,7 +582,7 @@ body .home-container .btn-container .btn-secondary {
   font-weight: 500;
 }
 .contac__main img {
-  width: 290px;
+  width: 250px;
   margin-bottom: 1em;
 }
 .contac__main form {
