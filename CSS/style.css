@@ -588,6 +588,7 @@ body .home-container .btn-container .btn-secondary {
 .contac__main form {
   display: flex;
   flex-direction: column;
+  margin: 0.5em;
 }
 .contac__main form label {
   font-weight: 300;
