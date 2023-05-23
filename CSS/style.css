@@ -88,6 +88,9 @@
   .contac__main .contac__img-container img {
     width: 200px;
   }
+  .contac__main form {
+    width: 220px;
+  }
 }
 button {
   transition: all 0.2s ease-in;
@@ -589,6 +592,8 @@ body .home-container .btn-container .btn-secondary {
   display: flex;
   flex-direction: column;
   margin: 0.5em;
+  border: 1px solid black;
+  width: 290px;
 }
 .contac__main form label {
   font-weight: 300;
