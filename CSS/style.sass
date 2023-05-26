@@ -18,6 +18,11 @@ $padding-h: 2em 0
     border-radius: $radius
     background-color: $bg-color
     color: $color
+
+@mixin hover
+    transition: all .2s ease-in
+    &:hover
+        color: $primary
     
 
 
@@ -116,6 +121,7 @@ body
                 display: grid
                 place-items: center
                 width: 100px
+                @include hover
                 span
                     font-size: 14px
                     text-align: center
@@ -123,6 +129,7 @@ body
                     font-weight: 500
                 i
                     font-size: 50px
+                    
 
 
 // Proyectos
@@ -259,26 +266,33 @@ body
             border: none
             border-radius: .5em
             width: 290px
+            outline: none
         textarea
             padding: calc($padding / 4)
             border: none
             border-radius: .250em
             margin-bottom: 1em
+            outline: none
         .submit-btn
             @include button(calc($padding / 4), .25em, $btn-color, $accent)
 
             
     .contac__other-means
-        // border: 1px solid black
+        
         text-align: center
         a
             text-decoration: none
             color: #39118B
             font-size: 40px
-            .contact-ways-container
-                display: flex
-                justify-content: space-evenly
-                align-items: center
+            transition: all .2s ease-in
+            &:hover
+                color: $secondaty
+        .contact-ways-container
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            
+
 
 
     // FOOTER
@@ -311,6 +325,7 @@ body
         i
             font-size: 20px
             color: $accent
+            @include hover
     hr
         width: 50%
         background-color: $accent
@@ -323,4 +338,6 @@ body
             text-decoration: none
             font-weight: 600
             color: $accent
+            @include hover
+            
 

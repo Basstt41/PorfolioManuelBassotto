@@ -432,6 +432,10 @@ body .home-container .btn-container .btn-secondary {
   display: grid;
   place-items: center;
   width: 100px;
+  transition: all 0.2s ease-in;
+}
+.about__main .stack .stack-wrapper .stack-item:hover {
+  color: #7EC7F2;
 }
 .about__main .stack .stack-wrapper .stack-item span {
   font-size: 14px;
@@ -592,7 +596,6 @@ body .home-container .btn-container .btn-secondary {
   display: flex;
   flex-direction: column;
   margin: 0.5em;
-  border: 1px solid black;
   width: 290px;
 }
 .contac__main form label {
@@ -603,12 +606,15 @@ body .home-container .btn-container .btn-secondary {
   padding: 0.5em;
   border: none;
   border-radius: 0.5em;
+  width: 290px;
+  outline: none;
 }
 .contac__main form textarea {
   padding: 0.5em;
   border: none;
   border-radius: 0.25em;
   margin-bottom: 1em;
+  outline: none;
 }
 .contac__main form .submit-btn {
   padding: 0.5em;
@@ -624,8 +630,12 @@ body .home-container .btn-container .btn-secondary {
   text-decoration: none;
   color: #39118B;
   font-size: 40px;
+  transition: all 0.2s ease-in;
 }
-.contac__main .contac__other-means a .contact-ways-container {
+.contac__main .contac__other-means a:hover {
+  color: #0B0121;
+}
+.contac__main .contac__other-means .contact-ways-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -661,6 +671,10 @@ body .home-container .btn-container .btn-secondary {
 .footer .footer__icons-container i {
   font-size: 20px;
   color: #F8F0FB;
+  transition: all 0.2s ease-in;
+}
+.footer .footer__icons-container i:hover {
+  color: #7EC7F2;
 }
 .footer hr {
   width: 50%;
@@ -676,4 +690,8 @@ body .home-container .btn-container .btn-secondary {
   text-decoration: none;
   font-weight: 600;
   color: #F8F0FB;
+  transition: all 0.2s ease-in;
+}
+.footer .footer__copy a:hover {
+  color: #7EC7F2;
 }/*# sourceMappingURL=style.css.map */
