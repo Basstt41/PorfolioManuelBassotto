@@ -30,6 +30,9 @@ $padding-h: 2em 0
 
 body
     font-family: 'poppins', sans-serif
+    margin: 0
+    padding: 0
+    box-sizing: border-box
     // nav-bar
     nav
         background-color: $secondaty !important
@@ -73,12 +76,19 @@ body
             width: 100%
             grid-gap: .5em
             .proposal-btn
-                @include button(1em, .3em, $btn-color, $accent)
-                a
-                    text-decoration: none
-                    color: $accent
-                    font-size: 1.3em
-                    font-weight: 300
+                text-decoration: none
+                color: $accent
+                @include button(.7em, .3em, $btn-color, $accent)
+                font-size: 1.3em
+                font-weight: 300
+                display: grid
+                place-items: center
+                &:hover
+                    background: transparent
+                    border: 1px solid $btn-color
+                    transition: all .3s ease-in
+
+                
             .btn-secondary
                 background-color: #002B44
                 border: 1px solid #002B44
@@ -90,7 +100,7 @@ body
     font-weight: 300
     display: grid
     place-items: center
-    grid-gap: 50px
+    grid-gap: 50px 0
     padding: $padding
     .spacer
         height: 30px
@@ -102,7 +112,6 @@ body
     .about__text-container
         display: grid
         place-items: center
-
 
     .stack
         display: grid
@@ -304,7 +313,7 @@ body
     justify-content: center
     align-items: center
     padding: 1em
-
+    width: 100%
 
     .footer__links-container
         padding: calc($padding / 4)
